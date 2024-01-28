@@ -1,0 +1,365 @@
+@font-face{
+    src: url("../fonts/LeagueSpartan-Bold.ttf");
+    font-family: "League-Bold";
+}
+
+@font-face{
+    src: url("../fonts/LeagueSpartan-Light.ttf");
+    font-family: "League-Light";
+}
+
+@font-face{
+    src: url("../fonts/LeagueSpartan-Regular.ttf");
+    font-family: "League-Regular";
+}
+
+@font-face{
+    src: url("../fonts/WorkSans-Bold.ttf");
+    font-family: "Work-Bold";
+}
+
+@font-face{
+    src: url("../fonts/WorkSans-ExtraLight.ttf");
+    font-family: "Work-Light";
+}
+
+@font-face{
+    src: url("../fonts/WorkSans-Regular.ttf");
+    font-family: "Work-Regular";
+}
+
+:root{
+    --cinza-1: rgb(207, 207, 207);
+    --branco-1: rgba(255, 255, 255, 0.9);
+}
+
+.t1{
+    font-family: "League-Bold";
+    font-size: 40px;
+}
+
+.t2{
+    font-family: "League-Bold";
+    font-size: 18px;
+}
+
+.t3{
+    font-family: "League-Light";
+    font-size: 16px;
+}
+
+.t4{
+    font-family: "Work-Bold";
+    font-size: 28px;
+}
+
+.t5{
+    font-family: "Work-Regular";
+    font-size: 18px;
+}
+
+body{
+    max-width: 1280px;
+    min-width: 360px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+/* Titulo */
+#titulo a{
+    text-decoration: none;
+}
+
+/* Navbar + Redes */
+.nav{
+    background-color: var(--cinza-1);
+}
+
+.navbar-toggler{
+    border: none;
+    box-shadow: none !important;
+}
+
+.active{
+    color: black !important;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.dropdown-menu{
+    border-radius: 0px;
+    border: 2px solid rgba(0, 0, 0, 0.5);;
+    background-color: var(--cinza-1);
+}
+
+.dropdown-item:hover{
+    background-color: transparent !important;
+    color: white;
+    font-weight: bold;
+}
+
+.instagram{
+    background-image: url("../img/instagram2.svg");
+}
+
+.instagram:hover{
+    background-image: url("../img/instagram1.svg");
+}
+
+.youtube{
+    background-image: url("../img/youtube1.png");
+}
+
+.youtube:hover{
+    background-image: url("../img/youtube2.png");
+}
+
+.youtube{
+    border-radius: 5px;
+}
+
+.icone{
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Carousel */
+.carousel-item > img{
+    max-height: 800px;
+}
+
+/* Time */
+.caixa-time{
+    position: absolute;
+    top: 300px;
+}
+
+.time{
+    font-family: "Work-Bold";
+    font-size: 110px;
+    color: var(--branco-1);
+}
+
+#arrow1{
+    background-image: url("../img/arrow4.png");
+    background-color: rgba(255, 255, 255, 0.66);
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.5s;
+}
+
+#arrow1:hover{
+    background-color: var(--cinza-1);
+    border: 3px solid var(--cinza-1);
+    width: 80px;
+    height: 80px;
+}
+
+/* Cards */
+.caixa-cards{
+    position: relative;
+}
+
+.card{
+    height: fit-content !important;
+    border-radius: 0px !important;
+    border: 1px solid rgba(207, 207, 207, 0.3);
+    background: transparent;
+}
+
+.hr-card{
+    border: 1px solid rgba(207, 207, 207, 0.3);
+    background-color: rgba(207, 207, 207, 0.3);;
+}
+
+.button-more{
+    background-color: var(--cinza-1);
+    border: none;
+    font-family: "Work-Regular";
+    font-size: 14px;
+    transition-duration: 0.5s;
+}
+
+.button-more:hover{
+    background-color: rgb(66, 66, 66);
+    color: white !important;
+}
+
+/* Footer */
+.rider{
+    font-family: "Work-Light";
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.conects{
+    font-family: "Work-Light";
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.email:hover{
+    color: white !important;
+}
+
+.instagram2{
+    background-image: url("../img/instagram1.svg");
+}
+
+.instagram2:hover{
+    background-image: url("../img/instagram2.svg");
+}
+
+.youtube2{
+    background-image: url("../img/youtube2.png");
+}
+
+.youtube2:hover{
+    background-image: url("../img/youtube1.png");
+}
+
+.youtube2{
+    border-radius: 5px;
+}
+
+/* TRAVELS PAGE */
+.travel{
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+
+/* INFO PAGE */
+.ride:hover{
+    cursor: zoom-in;
+}
+
+.rider-image{
+    transform: scale(3);
+    position: relative;
+    z-index: 10;
+}
+
+.cursor{
+    cursor: zoom-out;
+}
+
+/* MODAL COOKIES */
+#modal1{
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 50;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#h1cookies{
+    font-family: "League-Regular";
+    font-size: 42px;
+    text-transform: uppercase;
+    color: rgb(50, 50, 50);
+}
+
+#pcookies{
+    font-family: "League-Regular";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(50, 50, 50);
+}
+
+/* MODAL IMAGENS */
+.janela-modal{
+    width: 100%;
+    height: fit-content;
+    max-width: 1280px;
+    min-width: 360px;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.janela-modal2{
+    width: 100%;
+    height: fit-content;
+    max-width: 1280px;
+    min-width: 360px;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.abrir{
+    display: flex;
+}
+
+.close{
+    background-color: rgb(69, 69, 69);
+    border: none;
+    border-radius: 5px;
+    color: white !important;
+}
+
+.img-modal{
+    min-width: 340px;
+}
+
+
+@media all and (max-width: 905px){
+    .nav-link{
+        font-size: 14px;
+    }
+
+    .time{
+        font-size: 80px;
+    }
+
+    .caixa-time{
+        position: absolute;
+        top: 150px;
+    }
+
+    #arrow1{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media all and (max-width: 765px){
+    .titulo{
+        font-size: 12px;
+    }
+}
